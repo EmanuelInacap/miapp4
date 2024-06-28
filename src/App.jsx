@@ -10,11 +10,19 @@ function App() {
     setCount(count +1)
   }
 
+  const decrementar=()=>{
+    setCount(count -1)
+  }
+
   return (
     <>
       <div>
+        <h1>Contador es: {count}</h1>
         <button onClick={increment}>
-          count is {count}
+          +
+        </button>
+        <button onClick={decrementar}>
+         -
         </button>
       </div>
     </>
